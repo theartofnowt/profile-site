@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 
+//includes
+import './Assets/css/default.min.css';
+
+
 class App extends Component {
   render() {
     return (
