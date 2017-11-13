@@ -6,7 +6,29 @@ class Header extends Component {
     return (
       <header className="header">
 
-        test me
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Doodles</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="Banner">
+          <span className="strapline">
+          Freelance front-end developer Michael Brown
+          </span>
+        </div>
 
       </header>
     );
