@@ -6,6 +6,21 @@ $turquiose: #50E3C2;
 $white: #fff;
 $black: #222424;
 
+/*
+transaltor for web
+*/
+
+@mixin translateY($e){
+  -webkit-transform:  translateY($e);
+  -moz-transform: translateY($e);
+  transform:  translateY($e);
+}
+
+@mixin transition($e){
+  -webkit-transition:$e;
+  -moz-transition:$e;
+  transition:$e;
+}
 
 /*
 body
@@ -19,19 +34,14 @@ body {
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  @include transition(.5s ease-in-out);
+  cursor: pointer;
 
-/*
-transaltor for web
-*/
+  &:hover {
+    color: $black;
+    @include transition(.5 ease-in-out);
+  }
 
-@mixin translateY($e){
-  -webkit-transform:  translateY($e);
-      -moz-transform: translateY($e);
-          transform:  translateY($e);
-}
-
-@mixin transition($e){
-  -webkit-transition:$e;
-     -moz-transition:$e;
-          transition:$e;
 }
