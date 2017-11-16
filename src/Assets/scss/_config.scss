@@ -1,0 +1,37 @@
+/*
+variables
+*/
+
+$turquiose: #50E3C2;
+$white: #fff;
+$black: #222424;
+
+
+/*
+body
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: $black;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*
+transaltor for web
+*/
+
+@mixin translateY($e){
+  -webkit-transform:  translateY($e);
+      -moz-transform: translateY($e);
+          transform:  translateY($e);
+}
+
+@mixin transition($e){
+  -webkit-transition:$e;
+     -moz-transition:$e;
+          transition:$e;
+}

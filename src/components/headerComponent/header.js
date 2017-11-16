@@ -24,7 +24,7 @@ class Header extends Component {
           </ul>
         </nav>
 
-        <div className="Banner">
+        <div className="banner">
           <span className="strapline">
           Freelance front-end developer Michael Brown
           </span>

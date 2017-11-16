@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 //components
 import Header from './components/headerComponent/header.js'
+import Footer from './components/footerComponent/footer.js'
+import Homepage from './components/Pages/homePage.js'
 
 
 //includes
@@ -14,6 +16,10 @@ class App extends Component {
       <div className="App">
 
         <Header />
+
+          <Homepage />
+
+        <Footer />
 
       </div>
     );
