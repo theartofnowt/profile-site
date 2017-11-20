@@ -10,23 +10,14 @@ $black: #222424;
 transaltor for web
 */
 
-@mixin translateY($e){
-  -webkit-transform:  translateY($e);
-  -moz-transform: translateY($e);
-  transform:  translateY($e);
-}
-
-@mixin transition($e){
-  -webkit-transition:$e;
-  -moz-transition:$e;
-  transition:$e;
-}
 
 /*
 body
 */
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: $black;
@@ -34,14 +25,23 @@ body {
   font-style: normal;
 }
 
-a {
-  text-decoration: none;
-  @include transition(.5s ease-in-out);
+ul li {
   cursor: pointer;
 
   &:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+    text-decoration: none;
     color: $black;
-    @include transition(.5 ease-in-out);
+
   }
 
 }

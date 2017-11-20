@@ -4,13 +4,14 @@ import {
 } from 'react-router-dom';
 
 
+
 class Header extends Component {
   render() {
     return (
       <header className="header">
 
 
-        <nav>
+        <nav className="topnav">
           <ul>
             <li className="first">
               <Link to='/About'>About</Link>
@@ -23,6 +24,9 @@ class Header extends Component {
             </li>
             <li className="last">
               <a href="#">Contact</a>
+            </li>
+            <li className="menu">
+              <a  href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
             </li>
           </ul>
         </nav>

@@ -14,6 +14,8 @@ import Aboutpage from './components/Pages/aboutPage.js'
 
 //includes
 import './Assets/css/default.min.css';
+import {navFunction} from './Assets/js/nav.js'
+
 
 
 class App extends Component {
